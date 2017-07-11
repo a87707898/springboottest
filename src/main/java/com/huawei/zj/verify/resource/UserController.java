@@ -4,6 +4,7 @@ import org.springframework.web.bind.annotation.*;
 
 /**
  * Created by intel on 2017/6/25.
+ * 相关调用方法已经使用postman调通并保存
  */
 @RestController
 public class UserController
@@ -14,7 +15,6 @@ public class UserController
         return "Welcome," + username;
     }
 
-    //http://localhost:31025/groups/zhangjie
     @RequestMapping(value = "/groups/{groupname}", method = RequestMethod.GET)
     public String getUser(@PathVariable String groupname)
     {
